@@ -2,7 +2,7 @@
 
  My learning projects for Generative AI, built week by week.
 
- ## Week 2: Embeddings and Vector Search
+ ## Week 2: Day 1 :Embeddings and Vector Search
 
  Folder: `Embeddings_and_vectors`
 
