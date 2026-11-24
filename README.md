@@ -21,3 +21,20 @@
 
      pip install numpy sentence-transformers
      python Embeddings_and_vectors/embed_sentences.py
+
+
+
+## Day 2: Document Loading and Chunking
+
+- `chunker.py`: loads a text file, splits it into chunks in two ways
+  (fixed-size with overlap, and by paragraph), and stores each chunk
+  with metadata (source file and chunk id).
+- `sample.txt`: small text file used to test the chunkers.
+
+### What I learned
+- Fixed-size chunks can cut a sentence in the middle.
+- Paragraph chunks keep full paragraphs, so ideas stay together.
+- Overlap repeats a little text between chunks, so context is not lost.
+- Metadata (source, chunk id) helps to show sources and filter later.
+
+To run: open the folder `Embeddings_and_vectors` and run `python chunker.py`.
