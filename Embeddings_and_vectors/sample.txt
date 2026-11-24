@@ -1,0 +1,9 @@
+ An embedding is a list of numbers that represents the meaning of a text. Texts with similar meaning get vectors that are close to each other.
+
+ Cosine similarity tells how close the direction of two vectors is. A value near 1 means very similar, and a value near 0 means not related.
+
+ Chunking means splitting a long document into small pieces. Small chunks give more precise matches in search and RAG.
+
+ Overlap means repeating a little text between two chunks. It keeps the context at the border, so an idea is not lost.
+
+ Metadata is extra information stored with each chunk, such as the file name and the chunk number.
