@@ -1,0 +1,23 @@
+ An embedding is a list of numbers that represents the meaning of a text. Texts with similar meaning get vectors that are close to each other.
+
+ Cosine similarity tells how close the direction of two vectors is. A value near 1 means very similar, and a value near 0 means not related.
+
+ Chunking means splitting a long document into small pieces. Small chunks give more precise matches in search and RAG.
+
+ Overlap means repeating a little text between two chunks. It keeps the context at the border, so an idea is not lost.
+
+ Metadata is extra information stored with each chunk, such as the file name and the chunk number. It helps to show sources and to filter results.
+
+ A vector database stores embeddings and finds the vectors that are closest to a query vector. It is built for similarity search, so we can find text by meaning.
+
+ A normal SQL database is good for exact matches, such as finding rows where the city is Nagpur. It is not built to find the nearest vectors among millions.
+
+ FAISS is a library from Meta for fast similarity search over vectors. It runs in memory on your own computer and stores only the vectors, not the text.
+
+ Exact search compares the query with every vector, so it is accurate but slow for huge data. ANN search is faster but gives up a little accuracy.
+
+ Top-k means the k best matches for a question. In RAG we usually take a small k like 3 to 5, so the LLM gets focused context without too much noise.
+
+ Normalizing a vector makes its length equal to 1. For normalized vectors, the inner product is the same as the cosine similarity.
+
+ RAG means Retrieval Augmented Generation. First we search the right chunks using embeddings, then we give them to the LLM so it can answer using that text.
