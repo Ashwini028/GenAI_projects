@@ -59,7 +59,8 @@ for i, c in enumerate(chunks):
             if i == -1:
                 continue
             print(f"  score {score:.3f} | chunk {i}")
-            print("   ", chunks[i])
+            pr
+          int("   ", chunks[i])
 
 
     # Ask 5 questions about the notes

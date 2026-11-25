@@ -38,3 +38,23 @@
 - Metadata (source, chunk id) helps to show sources and filter later.
 
 To run: open the folder `Embeddings_and_vectors` and run `python chunker.py`.
+
+
+
+
+
+## Day 3: Vector Database and FAISS
+
+- `faiss_search.py`: splits `notes.txt` into chunks, creates embeddings with
+  sentence-transformers, normalizes them, stores them in a FAISS index
+  (IndexFlatIP), and answers questions with the top 3 matching chunks.
+- `notes.txt`: small notes file used for the search.
+
+### What I learned
+- A vector database stores embeddings and finds the closest ones to a query.
+- FAISS is a fast search library. It stores only vectors, so I keep a
+  separate list of chunks to get the text.
+- Normalized vectors with an inner product index give cosine similarity.
+- Exact search checks every vector. ANN search is faster but approximate.
+
+To run: open the folder `Embeddings_and_vectors` and run `python faiss_search.py`.
