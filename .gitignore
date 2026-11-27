@@ -2,3 +2,5 @@
 .venv/
 __pycache__/
 .idea/
+chroma_db/
+*chroma_db/
