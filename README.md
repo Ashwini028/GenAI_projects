@@ -67,3 +67,9 @@ To run: open the folder `Embeddings_and_vectors` and run `python faiss_search.py
 ## Week 2 Day 4: ChromaDB search
 - What it does: Splits text files into chunks, stores them in ChromaDB with metadata (source, chunk_id), and finds the most similar chunks for a question.
 - Tech: Python, ChromaDB, sentence-transformers (all-MiniLM-L6-v2), cosine distance, metadata filter, persistent storage.
+
+
+
+## Week 2 Day 5: Keyword vs Semantic vs Hybrid search
+- What it does: Compares keyword search (BM25), semantic search (embeddings) and hybrid search (BM25 + embeddings merged with Reciprocal Rank Fusion) on the same questions.
+- Tech: Python, rank_bm25, sentence-transformers (all-MiniLM-L6-v2), NumPy, RRF.
