@@ -53,8 +53,17 @@ To run: open the folder `Embeddings_and_vectors` and run `python chunker.py`.
 ### What I learned
 - A vector database stores embeddings and finds the closest ones to a query.
 - FAISS is a fast search library. It stores only vectors, so I keep a
+- 
   separate list of chunks to get the text.
 - Normalized vectors with an inner product index give cosine similarity.
 - Exact search checks every vector. ANN search is faster but approximate.
 
 To run: open the folder `Embeddings_and_vectors` and run `python faiss_search.py`.
+
+
+
+
+
+## Week 2 Day 4: ChromaDB search
+- What it does: Splits text files into chunks, stores them in ChromaDB with metadata (source, chunk_id), and finds the most similar chunks for a question.
+- Tech: Python, ChromaDB, sentence-transformers (all-MiniLM-L6-v2), cosine distance, metadata filter, persistent storage.
